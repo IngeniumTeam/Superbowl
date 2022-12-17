@@ -1,15 +1,16 @@
 #include <Digit.h>
 #include <PhotoElectric.h>
 
-Digit digit(2, 3);
-PhotoElectric photoElectric(4, 5);
+Digit digit(4, 3);
+PhotoElectric photoElectric(4);
 
 int cherryNumber = 0;
 
-void setup () {}
+void setup () {
+  digit.display(cherryNumber);
+}
 
-void loop ()
-{
+void loop () {
   if (photoElectric.detects())
   {
     cherryNumber++;
