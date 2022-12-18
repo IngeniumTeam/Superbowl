@@ -2,7 +2,7 @@
 #include <PhotoElectric.h>
 
 Digit digit(4, 3);
-PhotoElectric photoElectric(4);
+PhotoElectric photoElectric(5);
 
 int cherryNumber = 0;
 
